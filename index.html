@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTTG Helper</title>
+</head>
+
+<body>
+   
+    <div class="main">
+        <h1>DEEP WIKI</h1>
+        
+        <input type="text" name="sugada" id="sugada" placeholder="fvck krek 👨🏻‍🦲">
+
+        <a href="BathroomCams/index.html">Bathroom Cams (Always Open)<a/>
+        <a href="BlackHatPost/index.html">Black Hat Post (10PM - 1AM)<a/>
+        <a href="BurnedAtTheStake/index.html">Burned At The Stake (Always Open)<a/> 
+        <a href="CheapSurgery/index.html">Cheap Surgery (Always Open)<a/>
+        <a href="Darkbook/index.html">Darkbook (Always Open)<a/> 
+        <a href="Deathlog/index.html">Death Log (Always Open)<a/> 
+        <a href="DoctorMurder/index.html">Doctor Murder (12PM - 3AM)<a/> 
+        <a href="EuroFirearms/index.html">EuroFirearms (10PM - 1AM)<a/> 
+        <a href="FamilyDrugShop/index.html">Family Drug Shop (Always Open)<a/>
+        <a href="FatherDonald/index.html">Father Donald (12PM)<a/> 
+        <a href="FleshTrade/index.html">Flesh Trade (Always Open)<a/> 
+        <a href="ForsakenGifts/index.html">Forsaken Gifts (Always Open)<a/> 
+        <a href="GrandmasFantasy/index.html">Grandmas Fantasy (Always Open)<a/> 
+        <a href="GraveThieves/index.html">Grave Thieves (11PM - 3AM)<a/> 
+        <a href="GreetMySisters/index.html">GreetMySisters (12PM)<a/>
+        <a href="HailSatan/index.html">Hail Satan (Always Open)<a/>
+        <a href="HiddenCams/index.html">Hidden Cams (Always Open)<a/> 
+        <a href="HotBurners/index.html">Hot Burners (Always Open)<a/> 
+        <a href="Illuminati/index.html">Illuminati (3AM)<a/> 
+        <a href="IsEvil/index.html">IsEvil (2AM)<a/> 
+        <a href="KillForMe/index.html">Kill For Me (12PM)<a/> 
+        <a href="Legion/index.html">Legion (Always Open)<a/> 
+        <a href="NudeYoutubers/index.html">NudeYoutubers (11PM - 2AM)<a/> 
+        <a href="OrganMart/index.html">Organ Mart (10PM - 1AM)<a/> 
+        <a href="PassportsRUs/index.html">Passports R Us (Always Open)<a/> 
+        <a href="PayToRape/index.html">Pay To Rape (1AM)<a/> 
+        <a href="ScreamBitch/index.html">Scream Bitch (Always Open)<a/> 
+        <a href="ShadowWeb/index.html">Shadow Web Portal (12PM - 3AM)<a/>
+        <a href="SteroidQueen/index.html">Steroid Queen (Always Open)<a/>
+        <a href="TakedownMan/index.html">TakedownMan (Always Open)<a/> 
+        <a href="TangoDown/index.html">Tango Down (10PM - 2AM)<a/> 
+        <a href="TesticalMutilation/index.html">Testical Mutilation (12PM - 3AM)<a/> 
+        <a href="TheBombMaker/index.html">The Bomb Maker (Always Open)<a/>
+        <a href="TheButcher/index.html">The Butcher (Always Open)<a/>
+        <a href="TheDollMaker/index.html">The Doll Maker (Always Open)<a/> 
+        <a href="TheLoogaroo/index.html">The Loogaroo (Always Open)<a/> 
+        <a href="TheMuhgel/index.html">The Muhgel (10PM - 1AM)<a/> 
+        <a href="ThePedoHandbook/index.html">The Pedo Handbook (1AM)<a/> 
+        <a href="ThePrey/index.html">The Prey (11PM - 2AM)<a/> 
+        <a href="Warehouse33/index.html">Warehouse 33 (Always Open)<a/> 
+        <a href="WeedPost/index.html">Weed Post (Always Open)<a/>
+        <a href="zeroDay/index.html">zeroDay (Always Open)<a/>
+    </div>
+
+</body>
+
+<script>
+
+    const search = () => {    
+        let field = document.getElementById('sugada');
+        if (field == undefined) return;
+
+        let arefs = document.getElementsByTagName('a');
+        let count = 0;
+
+        for (let index = 0; index < arefs.length; index++) {
+            const element = arefs[index];
+            if (!field.value) {
+                element.hidden = false;
+                continue;
+            } else {
+                if (!element.innerText.toLowerCase().includes(field.value.toLowerCase()))
+                    element.hidden = true;
+                else
+                    element.hidden = false;
+            }
+        }
+
+    }
+
+    setInterval(() => {
+        search()
+    }, 0);
+
+</script>
+
+<style> 
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+    body {
+        background-color: rgb(59, 59, 59);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .5rem;
+        z-index: 2;
+    }
+
+    .main a {
+        background-color: rgb(59, 59, 59);
+        color: rgb(5, 142, 57);
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .main a:hover {
+        color: rgb(4, 114, 46);
+    }
+
+    .main h1 {
+        font-size: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .main input {
+        text-align: center;
+        margin: 1rem;
+    }
+
+</style>
+
+</html>
